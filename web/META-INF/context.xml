@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/Project1">
+  <Resource auth="Container" driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver" logAbandoned="true" maxActive="100" maxIdle="30" maxWait="10000" name="jdbc/beerDB" password="123456" removeAbandoned="true" removeAbandonedTimeout="60" type="javax.sql.DataSource" url="jdbc:sqlserver://localhost;databaseName=beerDB" username="sa"/>
+  <Realm className="org.apache.catalina.realm.DataSourceRealm" dataSourceName="jdbc/beerDB" debug="99" localDataSource="true" roleNameCol="Rolename" userCredCol="Password" userNameCol="Username" userRoleTable="UserRole" userTable="UserRole"/>
+</Context>
